@@ -1,0 +1,801 @@
+/* Обратите внимание, что названия шрифта при подключении должны соответствовать тому, как шрифты указаны в Google Fonts. То есть одно название, разный вес и стиль. Если что-то случится с локальными шрифтами, сработают удаленные. */
+@font-face {
+  src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  src: url('../fonts/OpenSans-Italic.ttf') format('truetype');
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  src: url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  src: url('../fonts/OpenSans-ExtraBold.ttf') format('truetype');
+  font-family: 'Open Sans';
+  font-weight: 800;
+  font-style: normal;
+}
+
+.pages{
+  margin: 0;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.intro{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1249px;
+  margin: 0 auto;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+h2 {
+  color: #585858;
+  margin: 0;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 55px;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.page__header_grey {
+  background-color: #e0e0e0;
+}
+
+.page__intro_grey {
+  background-color: #e0e0e0;
+}
+
+.page__content {
+  flex-grow: 1;
+}
+
+.intro__content{
+  margin-top: 2%;
+}
+.intro__content h1{
+  margin: 0;
+  font-size: 60px;
+  line-height: 1.2;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  word-break: break-word;
+}
+
+.intro__content p{
+  max-width: 520px;
+  margin-bottom: 51px;
+  opacity: 0.7; 
+}
+}
+
+.intro__content p{
+  max-width: 520px;
+  margin-bottom: 51px;
+  opacity: 0.7;
+}
+
+.img-box{
+  margin-top: 40px;
+  margin-bottom: 120px;
+  width: 551px;
+  height: 356px;
+  box-shadow: 0 -10px 40px 0 rgb(124, 124, 124);
+}
+
+.services{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1249px;
+  margin: 0 auto;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 106px;
+  padding-bottom: 53px;
+  border-bottom: 1px solid #ececec;
+}
+
+.batton{
+  box-sizing: border-box;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  display: inline-block;
+  width: 227px;
+  padding: 16px 0;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.batton_red{
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #ff2d2d;
+}
+
+.header{
+	display: flex;
+  justify-content: center;
+  margin: 0 auto;
+	max-width: 1254px;
+	min-height: 89px;
+	background-color: #000000;
+	opacity: 0.8;
+}
+
+.navigation {
+	display: flex;
+  max-width: 1700px;
+  max-height: 89px;
+}
+
+.navigation > a { 
+   padding: 42px 25px 30px;
+   color: #E0E0E0; 
+   font-size: 14px;
+   font-weight: bold;
+   text-decoration: none; 
+   text-transform: uppercase;
+}
+.navigation > a:hover {
+   background: red;
+   color: #E0E0E0;
+}
+
+.services_block{
+  flex: 1 1 502px;
+  max-width: 502px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+}
+
+.services_block h2{
+  margin-bottom: 27px;
+}
+
+.services_block p{
+  margin-bottom: 51px;
+}
+
+.service__heading_manage::before {
+  content: url('../images/service-1.png');
+}
+
+.service__heading_ux::before {
+  content: url('../images/service-2.png');
+}
+
+.service__heading_brand::before {
+  content: url('../images/service-3.png');
+}
+
+.service__heading_anim::before {
+  content: url('../images/service-4.png');
+}
+
+.action-button {
+  box-sizing: border-box;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  display: inline-block;
+  width: 227px;
+  padding: 16px 0;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.action-button_white {
+  font-size: 15px;
+  color: #ff3f40;
+  background-color: #ffffff;
+  border: 2px solid #ff3f40;
+}
+
+.services_block2{
+  flex: 1 1;
+  max-width: 609px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service{
+  flex: 1 1 288px;
+  width: 288px;
+  margin-bottom: 50px;
+}
+.service h3{
+  letter-spacing: 1.5px;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.service p{
+  opacity: 0.7;
+}
+
+.service:nth-child(odd) {
+  margin-right: 32px;
+}
+
+.feature{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1249px;
+  margin: 0 auto;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 94px;
+  padding-bottom: 52px
+}
+
+.feature__header{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 67px;
+}
+
+.feature__header h2{
+  margin-bottom: 16px;
+}
+
+.featire__header p{
+  max-width: 500px;
+  margin-bottom: 30px;
+  opacity: 0.7;
+}
+.products__filter {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.products__link {
+  position: relative;
+    left: 45px;
+  color: #000;
+  margin-right: 55px;
+  font-size: 22px;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.products__link_active {
+  color: #ff2d2d;
+  opacity: 1;
+}
+
+.products__link:hover {
+  color: #ff2d2d;
+}
+
+.products {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product {
+  flex: 1 1 24%;
+  min-width: 250px;
+  max-width: 299px;
+  height: 291px;
+  margin-bottom: 18px;
+  object-fit: cover;
+}
+
+.link-block{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-block a{
+  margin: 2%;
+  color: black;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  letter-spacing: 0.22px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.catalog-block{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.team{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1249px;
+  margin: 0 auto;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 60px;
+  padding-bottom: 110px;
+}
+
+.team__header {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 67px;
+}
+
+.team__header p{
+  max-width: 460px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.team__line {
+  margin-left: 0;
+}
+
+.header__line {
+  width: 122px;
+  height: 3px;
+  background-color: #ff2d2d;
+  border: none;
+}
+
+.team__members {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+    align-content: space-between;
+  min-height: 458px;
+}
+
+.team__selected-photo {
+  flex-shrink: 0;
+  width: 321px;
+  height: 458px;
+  margin-right: 65px;
+  background-color: #eb6d4a8f;
+  align-self: start;
+}
+
+.team__main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.team__selected-info {
+  position: relative;
+    display: flex;
+  flex-direction: column;
+  align-self: start;
+    justify-content: space-between;
+  max-width: 642px;
+  margin-top: -7px;
+}
+
+.team__selected-about {
+  margin-bottom: 34px;
+}
+
+.team__selected-name {
+    bottom: 5px;
+  font-size: 30px;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0.8;
+  margin-bottom: 16px;
+}
+
+.team__selected-link {
+  color: #000;
+  font-size: 18px;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-style: italic;
+  text-decoration: none;
+  margin-right: 30px;
+} 
+
+.team__selected-link:hover {
+  text-decoration: underline;
+}
+
+.members {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.member {
+  position: relative;
+  margin-top: 18px;
+}
+
+.member:not(:last-child) {
+  margin-right: 18px;
+}
+
+.member__name {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  visibility: hidden;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 37px;
+  text-align: center;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.member:hover > .member__name {
+  visibility: visible;
+}
+
+.member__photo {
+  display: block;
+  width: 197px;
+  height: 214px;
+  background-color: #d4dce680;
+}
+
+.team-block{
+  display: flex;
+  margin-right: 80px;
+}
+
+.link-block2{
+  font-family: Open Sans;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.9px;
+  margin-top: 26.5px;
+  margin-bottom: 50px;
+}
+
+.link-block2 a{
+  color: black;
+}
+
+.subscribe{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1249px;
+  margin: 0 auto;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  background-color: #2c2c2c;
+  padding-top: 124px;
+  padding-bottom: 140px;
+}
+
+.subscribe_header {
+  max-width: 1249px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.subscribe_heading {
+  color: #fff;
+  opacity: 0.8;
+  text-transform: none;
+  margin-bottom: 30px;
+}
+
+.subscribe_text{
+  color: #fff;
+  opacity: 0.8;
+  margin-bottom: 50px;
+}
+
+.subscribe__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe__form .subscribe__input {
+  color: #8e8e8e;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  flex: 0 1 521px;
+  min-height: 79px;
+  padding: 0;
+  padding-left: 35px;
+  padding-right: 35px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 22px;
+  background-color: #fff;
+}
+
+.subscribe__form .subscribe__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  width: 214px;
+  min-height: 79px;
+  background-color: #ff2d2d;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.feedback-contacts {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: 92px;
+  padding-bottom: 110px;
+  /* overflow: hidden; */
+  /* display: grid; */
+  /* grid-template-columns: 1fr 731px 107px 411px 1fr; */
+  /* grid-template-rows: repeat(2, auto); */
+}
+
+.feedback-contacts::after {
+  /* content: ''; */
+  height: 100%;
+  background-color: #2c2c2c;
+  /* grid-column: 5 / 6; */
+  /* grid-row: 2 / 3; */
+}
+
+/* Feedback */
+.feedback {
+  /* column-gap: 107px; */
+  /* grid-column: 2 / 3; */
+  /* grid-row: 1 / 3; */
+}
+
+.feedback__header {
+  box-sizing: border-box;
+}
+
+.feedback__heading {
+  margin-bottom: 34px;
+}
+
+.feedback__text {
+  max-width: 720px;
+  margin-bottom: 50px;
+}
+
+.feedback__line {
+  margin-left: 0;
+  margin-bottom: 75px;
+}
+
+.feedback__body {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 731px;
+  margin-right: 107px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.feedback__left-box {
+  flex: 1 1 auto;
+}
+
+.feedback__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feedback__input {
+  color: #8e8e8e;
+  box-sizing: border-box;
+  padding-left: 54px;
+  padding-right: 54px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f3f3f3;  
+  margin-bottom: 45px;
+}
+
+.feedback__name{
+  font-size: 16px;
+  width: 339px;
+  height: 69px;
+  background-color: #f3f3f3;
+  margin-right: 48px;
+}
+
+.feedback__mail{
+  font-size: 16px;
+  width: 339px;
+  height: 69px;
+  background-color: #f3f3f3;
+}
+
+.feedback__message {
+  resize: none;
+  font-size: 16px;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  width: 100%;
+  max-width: 731px;
+  height: 252px;
+  box-sizing: border-box;
+  padding: 35px 54px;
+  margin-bottom: 45px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f3f3f3;  
+}
+
+.feedback__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 731px;
+  height: 72px;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  background-color: #ff2d2d;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+} 
+
+/* Contacts */
+.contacts {
+  box-sizing: border-box;
+  position: relative;
+  color: #e0e0e0;
+  background-color: #2c2c2c;
+  box-sizing: border-box;
+  padding: 125px 53px 125px 78px;
+  min-height: 481px;
+  max-width: 411px;
+  /* grid-column: 4 / 5; */
+  /* grid-row: 2 / 3; */
+}
+
+.contacts__heading {
+  color: #e0e0e0;
+  font-size: 18px;
+  margin-bottom: 13px;
+}
+
+.contacts-address {
+  line-height: 1.75;
+}
+
+.contacts__line {
+  margin-bottom: 17px;
+}
+
+.feedback__right-box {
+  min-height: 481px;
+  flex: 1 1 auto;
+}
+
+.contacts__decor {
+  background-color: #2c2c2c;
+}
+
+/* Другой способ сделать темную подложку - создать пустой псевдоэлемент, стилизовать его и исопльзовать позиционирование. Этот подход лучше тем, что вам не нужно изменять HTML. Но для его работы необходимо поставить overflow: hidden для родителя, что не очень хорошая практика.*/
+.contacts::after {
+  /* content: ''; */
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  /* Свойство transform позволяет изменять внешний вид элементов. Значение translate сдвигает элемент по осям X, Y или по обеим сразу. Его особенность - проценты расчитываются не от размеров родителя, а от самого элемента. При этом такой сдвинутый элемент не участвует в потоке. */
+  width: 100vw;
+  height: 100%;
+  background-color: #2c2c2c;
+}
+
+.footer {
+  background-color: #2c2c2c;
+  padding: 0 1vw;
+}
+
+.footer__content{
+  box-sizing: border-box;
+  padding: 19px 0 0;
+  color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 110px;
+  background-color: #2c2c2c;
+  margin-left: 30px;
+  margin-right: 30px;
+  flex-wrap: wrap;
+  max-width: 1249px;
+  margin: 0 auto;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.footer__social-links > .footer__link:not(:last-child) {
+  margin-right: 18px;
+}
